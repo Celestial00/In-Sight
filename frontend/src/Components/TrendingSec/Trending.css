@@ -1,0 +1,49 @@
+.Trending-Sec{
+
+    width: 100%;
+    height: 600px;
+    
+}
+
+.Trending-Sec .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title p{
+
+    
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.title .line{
+
+    
+    width: 80%;
+    height: 2px;
+    margin-left: 40px;
+    background-color: black;
+
+
+}
+
+.Trending-topics{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 0px 20%;
+}
+
+.Divider{
+
+    width: 80%;
+    height: 40px;
+    background-color: black;
+
+}
