@@ -29,9 +29,9 @@
 
     
     width: 80%;
-    height: 2px;
+    height: 0.5px;
     margin-left: 40px;
-    background-color: black;
+    background-color: #61677A;
 
 
 }
@@ -46,3 +46,16 @@
 
 }
 
+.sidebar{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .Tags-container{
+    padding-right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}

@@ -25,7 +25,7 @@ export default function TrendingTopix() {
           </div>
 
           <div>
-            <Tags />
+            <Tags title={"Programming"} width={"80px"} height={"20"} fontsize={"0.6em"} />
           </div>
         </div>
 
