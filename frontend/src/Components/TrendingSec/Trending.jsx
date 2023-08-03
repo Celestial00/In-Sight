@@ -7,17 +7,30 @@ export default function Trending() {
 
         <div className='Trending-Sec'>
 
-            <div className='title'> <p>Trending</p> <div className='line'></div> </div>
+<div className='title'> <p>Article's</p> <div className='line'></div> </div>
 
-            <div className='Trending-topics'>
+         <div className='Content'>
 
-                <TrendingTopix/>
-                <TrendingTopix/>
-                <TrendingTopix/>
-                <TrendingTopix/>
+         <div className='Trending-topics'>
 
-                
-            </div>
+<TrendingTopix/>
+<TrendingTopix/>
+<TrendingTopix/>
+<TrendingTopix/>
+
+
+</div>
+
+<div className="sidebar">
+
+<TrendingTopix/>
+<TrendingTopix/>
+<TrendingTopix/>
+<TrendingTopix/>
+
+</div>
+
+         </div>
 
             <div className='Divider'></div>
 

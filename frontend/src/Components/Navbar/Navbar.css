@@ -10,6 +10,9 @@
 
 }
 
+a{
+    color: black;
+}
 
 .Navbar .menu ul li{
 
@@ -41,5 +44,6 @@ a{
     height: 40px;
     border-radius: 15px;
     cursor: pointer;
+    border: none;
 
 }

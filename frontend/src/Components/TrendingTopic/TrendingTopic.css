@@ -1,12 +1,13 @@
 .Topic-trending-Card{
 
-    width: 500px;
-    height: 160px;
+    width: 60%;
+    height: 190px;
     color: black;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
+    margin-bottom: 20px;
     
 }
 
@@ -24,8 +25,8 @@
 
 .profile-info .profile-pic{
 
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-image: url('../../../Assets//profile.jpg');
     /* background-position: calc(50%); */
     background-size: cover;
@@ -51,17 +52,52 @@
 .Article-desc{
     margin: 20px 0px;
 
+
+}
+
+.Article-desc h2{
+
+    font-size: 1.4em;
+    margin-bottom: 6px;
+
 }
 
 .Article-desc p{
 
     font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
     
 }
 
 .Article-desc .Date span{
 
     font-size: 0.9em;
+}
+
+.Actions{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Actions .left{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.Actions .left .Tags{
+
+    margin-left: 10px ;
+
+}
+
+.BiBookBookmark{
+
+    
 }
