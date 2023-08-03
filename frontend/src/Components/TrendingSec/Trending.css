@@ -8,7 +8,7 @@
 .Trending-Sec .Content{
 
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 2fr 1fr; 
 }
 
 .Trending-Sec .title{
@@ -54,8 +54,17 @@
 }
 
 .sidebar .Tags-container{
-    padding-right: 300px;
+    padding-right: 100px;
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.divider-1{
+
+    width: 80%;
+    height: 0.2px;
+    background-color: black;
+
 
 }
