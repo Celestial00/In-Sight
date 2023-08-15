@@ -1,49 +1,43 @@
-.Navbar{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    padding: 10px 200px;
-    position: sticky;
-
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px 200px;
+  position: sticky;
+  font-family: "inter";
 }
 
-a{
-    color: black;
+a {
+  color: black;
 }
 
-.Navbar .menu ul li{
-
-    display: inline-block; 
-    margin-right: 20px; 
+.Navbar .menu ul li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.menu{
-
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a{
-
-    font-weight: 600;
+a {
+  font-weight: 600;
 }
 
-.sign-btn{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #CF0A0A;
-    width: 130px;
-    height: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: none;
-
+.sign-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #212a3e;
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }

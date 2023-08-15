@@ -1,0 +1,53 @@
+.ArticleSec {
+  width: 100%;
+}
+
+.Sec-intro-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0px;
+}
+
+.Sec-intro-title h2 {
+  font-size: 2.4rem;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 80px;
+}
+
+.article-item {
+  flex: 1 0 calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.divider {
+  width: 200px;
+  height: 2px;
+  background-color: #222831;
+  border: none;
+  border-radius: 20px;
+}
+
+.Trend-articles {
+  margin-left: 270px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Trend-articles h1 {
+  font-size: 1.1em;
+}
+
+.normal-articles {
+  margin-top: 100px;
+}

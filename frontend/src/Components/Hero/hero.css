@@ -1,8 +1,8 @@
 .Slider {
   width: 100%;
   height: 600px;
-  background-color: #272829;
-  color: white;
+  background-color: #f1f6f9;
+  color: black;
 
   display: flex;
   justify-content: center;
@@ -30,11 +30,16 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #cf0a0a;
+  background-color: #212a3e;
   width: 200px;
   height: 50px;
   border-radius: 15px;
   cursor: pointer;
   color: #d8d9da;
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.sign-btn-2:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
