@@ -7,7 +7,7 @@ export default function Welcome() {
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar isit={false} />
       </div>
       <div>
         <Hero />

@@ -1,0 +1,8 @@
+.TabSelector ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.TabSelector ul li .selected {
+  padding-bottom: 6px;
+  border-bottom: 2px solid black;
+}

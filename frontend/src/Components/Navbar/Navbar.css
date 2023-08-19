@@ -41,3 +41,30 @@ a {
   border: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
+
+.User-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.settings {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  /* border: 0.01px solid black; */
+  border-radius: 50%;
+}
+
+.profile-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

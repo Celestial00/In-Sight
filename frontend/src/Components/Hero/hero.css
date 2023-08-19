@@ -38,8 +38,10 @@
   color: #d8d9da;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: 0.1s;
 }
 
 .sign-btn-2:hover {
+  scale: 102%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }

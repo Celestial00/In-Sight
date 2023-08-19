@@ -1,0 +1,39 @@
+.ArticleTabs {
+  width: 1200px;
+  height: 170px;
+  /* border: 2px solid black;    */
+  display: flex;
+  gap: 20px;
+  margin: 50px 0px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.ArticleTabs:hover {
+  transform: scale(1.02);
+}
+
+.Tab-image {
+  width: 220px;
+  height: 100%;
+}
+
+.Tab-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Article-title {
+  margin: 10px 0px;
+}
+
+.Description {
+  margin-bottom: 5px;
+}

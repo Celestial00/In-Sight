@@ -1,6 +1,6 @@
 import React from "react";
 import "./Article.css";
-import img from "../../Assets/pic.jpg";
+import img from "../../Assets/car.jpg";
 import Tags from "../Tags/Tags";
 import { BiLike, BiComment } from "react-icons/bi";
 import { BsBookmarkHeart } from "react-icons/bs";

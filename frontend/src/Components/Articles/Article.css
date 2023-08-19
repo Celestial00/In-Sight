@@ -1,11 +1,18 @@
 .Article-Card {
   width: 420px;
   height: 450px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
   border: none;
   border-bottom: 50px;
+  background-color: #f1f6f9;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.1s;
+}
+
+.Article-Card:hover {
+  scale: 102%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .Image {
@@ -13,6 +20,7 @@
   height: 300px;
   position: relative;
   background-color: black;
+  border-radius: 20px;
 }
 
 .Image > img {
@@ -20,6 +28,7 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
+  border-radius: 20px;
 }
 
 .tag {
