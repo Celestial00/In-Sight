@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import Form from "../../Components/Form/Form";
+import "./Login.css";
 
 export default function Login() {
   return (
-    <div>
-      
-      <h1>Login</h1>
+    <div className="Login">
+      <Form page={true} />
     </div>
-  )
+  );
 }

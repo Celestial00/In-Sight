@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoSettingsOutline } from "react-icons/io5";
 import { BsPencilSquare } from "react-icons/bs";
 import pro from "../../Assets/pro.jpg";
 
 export default function Navbar(props) {
   var isHome = props.isit;
+  var Nav = useNavigate();
+
+  function toggleRegPage() {
+    Nav("/register");
+  }
 
   return (
     <div className="Navbar">
       <div className="Logo">
         <h1>In-Sight</h1>
-        
       </div>
 
       <div className="menu">
@@ -21,18 +25,15 @@ export default function Navbar(props) {
             <div>
               <ul>
                 <li>
-                  <Link> Membership </Link>
-                </li>
-                <li>
                   <Link to="/login"> Sign in </Link>
                 </li>
                 <li>
-                  <Link to="/blog"> Blog </Link>
+                  <Link to="/AboutUs"> About us </Link>
                 </li>
               </ul>
             </div>
 
-            <div className="sign-btn">
+            <div className="sign-btn" onClick={toggleRegPage}>
               <p>Join Now!</p>
             </div>
           </>

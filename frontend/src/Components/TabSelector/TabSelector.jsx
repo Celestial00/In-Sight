@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import "./TabSelector.css";
 
 export default function TabSelector() {
-  const [selectedTab, setSelectedTab] = useState("Programming");
+  const [selectedTab, setSelectedTab] = useState("All");
 
   const tabs = [
-    { label: "Programming", id: 1 },
-    { label: "Gaming", id: 2 },
-    { label: "Graphic Design", id: 3 },
-    { label: "AI", id: 4 },
-    // Add more tabs as needed
+    { label: "All", id: 1 },
+    { label: "Programming", id: 2 },
+    { label: "Gaming", id: 3 },
+    { label: "Graphic Design", id: 4 },
+    { label: "AI", id: 5 },
   ];
 
   const handleTabClick = (tabLabel) => {

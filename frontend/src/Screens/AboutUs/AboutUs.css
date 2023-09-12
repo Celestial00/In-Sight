@@ -1,0 +1,38 @@
+.AboutUs-Page {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Desc-text h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.Desc-text p {
+  font-size: 0.9em;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Logo h2 {
+  font-size: 8em;
+}
+
+.Team-Desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Team-Desc h3 {
+  margin-bottom: 20px;
+  font-size: 5em;
+}

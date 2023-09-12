@@ -9,6 +9,7 @@ import Welcome from './Screens/Welcome/Welcome.jsx'
 import Register from './Screens/RegisterPage/Register'
 import Login from './Screens/LoginPage/Login';
 import Home from './Screens/Home/Home.jsx'
+import AboutUs from './Screens/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route excat path='/home' element={<Home />} > </Route>
           <Route excat path='/register' element={<Register />}  ></Route>
           <Route excat path='/login' element={<Login />}  ></Route>
+          <Route excat path='/Aboutus' element={<AboutUs />}  ></Route>
 
         </Routes>
 

@@ -3,6 +3,8 @@ import "./ArticleTabs.css";
 import img from "../../Assets/Grap.jpg";
 import pro from "../../Assets/pro.jpg";
 import Tags from "../Tags/Tags";
+import { CiBookmarkPlus } from "react-icons/ci";
+import { SlOptionsVertical } from "react-icons/sl";
 
 export default function ArticleTabs() {
   return (
@@ -36,8 +38,15 @@ export default function ArticleTabs() {
             websites.
           </p>
         </div>
-        <div className="tags-date">
-          <Tags title={"Design"} />
+        <div className="tags-icons">
+          <div className="tagss">
+            <Tags title={"Design"} />
+          </div>
+
+          <div className="icons">
+            <CiBookmarkPlus className="shitty-icons-1" />
+            <SlOptionsVertical className="shitty-icons-2" />
+          </div>
         </div>
       </div>
     </div>

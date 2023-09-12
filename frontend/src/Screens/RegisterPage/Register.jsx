@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import Form from "../../Components/Form/Form";
 
 export default function Register() {
   return (
     <div>
-      
-      <h2> Register</h2>
-
+      <Form page={false} />
     </div>
-  )
+  );
 }

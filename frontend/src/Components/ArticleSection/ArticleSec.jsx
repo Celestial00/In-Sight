@@ -16,10 +16,6 @@ export default function ArticleSec() {
           <Article />
           <Article />
         </div>
-
-        <div className="normal-articles">
-          <ArticleTabs />
-        </div>
       </div>
     </div>
   );
