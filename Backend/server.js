@@ -1,14 +1,13 @@
 const express = require('express')
 const app = express()
+const DB = require('./Database')
+require('dotenv').config()
 
-app.get('/', (req, res) => {
 
-    res.send("hello world");
 
-})
+app.listen(process.env.PORT, () => {
 
-app.listen(5000, () => {
-
-    console.log('connextex to ', 5000);
+    DB()
+    console.log('connextex to ', process.env.PORT);
 
 })
