@@ -32,7 +32,7 @@ export default function AboutUs() {
       <div className="Team-Desc">
         <h3> Team</h3>
 
-        <p>Alone but happy :(</p>
+        <p>Team Huh i am the best!</p>
       </div>
     </>
   );

@@ -5,10 +5,19 @@ import pro from "../../Assets/pro.jpg";
 import Tags from "../Tags/Tags";
 import { CiBookmarkPlus } from "react-icons/ci";
 import { SlOptionsVertical } from "react-icons/sl";
+import { useNavigate } from "react-router-dom";
 
 export default function ArticleTabs() {
+  var Nav = useNavigate();
+  function toggleEditorPage() {
+    console.log("sups");
+
+    let id = 1;
+    Nav("/Article", { state: { id: id } });
+  }
+
   return (
-    <div className="ArticleTabs">
+    <div className="ArticleTabs" onClick={toggleEditorPage}>
       <div className="Tab-image">
         <img src={img} alt="" srcset="" />
       </div>

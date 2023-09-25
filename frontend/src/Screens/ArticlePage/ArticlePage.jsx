@@ -9,7 +9,7 @@ export default function Article() {
   return (
     <div className="Article-Page">
       <div className="user-intro">
-        <div className="Image">
+        <div className="Article-Image">
           <img src={img} alt="" />
         </div>
 
@@ -20,7 +20,7 @@ export default function Article() {
       </div>
 
       <div className="article-info">
-        <div className="Article-title">
+        <div className="Article-title-">
           <h1>
             The Art of Visual Communication: Exploring the World of Graphic
             Design

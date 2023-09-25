@@ -4,10 +4,20 @@ import img from "../../Assets/car.jpg";
 import Tags from "../Tags/Tags";
 import { BiLike, BiComment } from "react-icons/bi";
 import { BsBookmarkHeart } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 export default function Article() {
+  var Nav = useNavigate();
+
+  function toggleEditorPage() {
+    console.log("sups");
+
+    // let id = 1;
+    // Nav("/ArticleEditor", { state: { id: id } });
+  }
+
   return (
-    <div className="Article-Card">
+    <div className="Article-Card" onClick={toggleEditorPage}>
       <div className="Image">
         <img src={img} alt="" srcset="" />
         <div className="tag">

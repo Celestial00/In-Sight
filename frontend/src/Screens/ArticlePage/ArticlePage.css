@@ -6,20 +6,22 @@
   flex-direction: column;
 }
 
-.Image {
+.Article-Image {
   width: 30px;
   height: 30px;
   position: relative;
   border: none;
+  background-color: black;
   border-radius: 50%;
 }
 
-.Image > img {
+.Article-Image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: none;
   opacity: 0.8;
+  border-radius: 50%;
 }
 
 .user-intro {
@@ -42,7 +44,7 @@
   flex-direction: column;
 }
 
-.Article-title {
+.Article-title- {
   margin-top: 4em;
 }
 

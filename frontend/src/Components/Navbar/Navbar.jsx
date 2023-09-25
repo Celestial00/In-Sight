@@ -13,6 +13,10 @@ export default function Navbar(props) {
     Nav("/register");
   }
 
+  function toggleEditor() {
+    Nav("/articleeditor");
+  }
+
   return (
     <div className="Navbar">
       <div className="Logo">
@@ -41,7 +45,7 @@ export default function Navbar(props) {
           <>
             <div className="User-info">
               <div className="write-pec">
-                <BsPencilSquare className="settings" />
+                <BsPencilSquare className="settings" onClick={toggleEditor} />
               </div>
 
               <div className="profile-img">
