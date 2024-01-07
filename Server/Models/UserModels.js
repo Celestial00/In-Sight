@@ -17,11 +17,7 @@ const UserModel = Mongoose.Schema({
         Required: true
 
     },
-    Gender:{
-
-        type:String,
-        Required : true
-    },
+ 
 
     
 }, {timestamp: true} )

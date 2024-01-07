@@ -9,14 +9,13 @@ const jwt = require("jsonwebtoken");
 
 Auth.post("/register", async (req, res) => {
   try {
-    const { Name, Email, Password, Geneder } = req.body;
+    const { Name, Email, Password } = req.body;
     const salt = await bcrypt.genSalt(10);
     const EncPass = await bcrypt.hashSync(Password, salt);
     let newUser = new UserModel({
       Name: Name,
       Email: Email,
       Password: EncPass,
-      Gender: Geneder,
     });
 
     let NewNow = await newUser.save();
@@ -42,9 +41,9 @@ Auth.post("/login", async (req, res) => {
       return res.status(401).json("wrong creditionals");
     }
 
-    const token = jwt.sign({id:user._id}, process.env.KEY, {expiresIn:'3d'})
-    const {Password, ...info} = user._doc
-    res.cookie('Token', token).status(200).json(info) 
+    const token = jwt.sign({ id: user._id }, process.env.KEY, { expiresIn: '3d' })
+    const { Password, ...info } = user._doc
+    res.cookie('Token', token).status(200).json(info)
 
 
   } catch (err) {
@@ -55,17 +54,37 @@ Auth.post("/login", async (req, res) => {
 //logout
 
 
-Auth.get('/logout', (req, res) =>{
+Auth.get('/logout', (req, res) => {
 
-    try{
+  try {
 
-        res.clearCookie('Token', {sameSite:'none', secure:true}).status(200).json('logout')
+    res.clearCookie('Token', { sameSite: 'none', secure: true }).status(200).json('logout')
+
+  }
+  catch (e) {
+
+    res.status(500).json(err)
+  }
+
+})
+
+Auth.get('/refetch', (req, res) => {
+
+  const token = res.cookies.Token
+
+  jwt.verify(token, process.env.KEY, {}, async (err, data) => {
+
+    if (err) {
+
+      res.status(400).json(err)
 
     }
-    catch(e){
 
-        res.status(500).json(err)
-    }
+    res.status(200).json(data)
+
+  })
+
+
 
 })
 
