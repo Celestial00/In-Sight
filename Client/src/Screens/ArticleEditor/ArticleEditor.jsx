@@ -40,7 +40,7 @@ export default function ArticleEditor() {
           rows="10"
         ></textarea>
       </div>
-      {/* 
+      
       <div className="taggings">
         <h1>select a tag</h1>
         <div className="taglist">
@@ -48,7 +48,7 @@ export default function ArticleEditor() {
             return <Tags title={e.label} />;
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -12,8 +12,7 @@ export default function Article() {
   function toggleEditorPage() {
     console.log("sups");
 
-    // let id = 1;
-    // Nav("/ArticleEditor", { state: { id: id } });
+  
   }
 
   return (

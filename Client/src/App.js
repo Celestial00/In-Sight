@@ -15,9 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route excat path="/" element={<Welcome />}></Route>
-          <Route excat path="/home" element={<Home />}>
-            {" "}
-          </Route>
+          <Route excat path="/home" element={<Home />}></Route>
           <Route excat path="/register" element={<Register />}></Route>
           <Route excat path="/login" element={<Login />}></Route>
           <Route excat path="/Aboutus" element={<AboutUs />}></Route>

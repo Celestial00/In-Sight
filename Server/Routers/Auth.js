@@ -3,8 +3,6 @@ const UserModel = require("../Models/UserModels.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-
-
 //register
 
 Auth.post("/register", async (req, res) => {
@@ -41,11 +39,11 @@ Auth.post("/login", async (req, res) => {
       return res.status(401).json("wrong creditionals");
     }
 
-    const token = jwt.sign({ id: user._id }, process.env.KEY, { expiresIn: '3d' })
-    const { Password, ...info } = user._doc
-    res.cookie('Token', token).status(200).json(info)
-
-
+    const token = jwt.sign({ id: user._id, username: user.Name, Email: user.Email }, process.env.KEY, {
+      expiresIn: "3d",
+    });
+    const { Password, ...info } = user._doc;
+    res.cookie("Token", token).status(200).json(info);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -53,39 +51,27 @@ Auth.post("/login", async (req, res) => {
 
 //logout
 
-
-Auth.get('/logout', (req, res) => {
-
+Auth.get("/logout", (req, res) => {
   try {
-
-    res.clearCookie('Token', { sameSite: 'none', secure: true }).status(200).json('logout')
-
+    res
+      .clearCookie("Token", { sameSite: "none", secure: true })
+      .status(200)
+      .json("logout");
+  } catch (e) {
+    res.status(500).json(err);
   }
-  catch (e) {
+});
 
-    res.status(500).json(err)
-  }
-
-})
-
-Auth.get('/refetch', (req, res) => {
-
-  const token = res.cookies.Token
+Auth.get("/refetch", (req, res) => {
+  const token = req.cookies.Token;
 
   jwt.verify(token, process.env.KEY, {}, async (err, data) => {
-
     if (err) {
-
-      res.status(400).json(err)
-
+      return res.status(404).json(err);
     }
 
-    res.status(200).json(data)
-
-  })
-
-
-
-})
+  return res.status(200).json(data);
+  });
+});
 
 module.exports = Auth;

@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { IoSettingsOutline } from "react-icons/io5";
 import { BsPencilSquare } from "react-icons/bs";
 import pro from "../../Assets/pro.jpg";
-import { UserContext } from "../../context/userContext";
 
 export default function Navbar(props) {
   var isHome = props.isit;
   var Nav = useNavigate();
-
 
   function toggleRegPage() {
     Nav("/register");
@@ -26,7 +24,7 @@ export default function Navbar(props) {
       </div>
 
       <div className="menu">
-        {isHome == false ? (
+        {isHome === false ? (
           <>
             <div>
               <ul>

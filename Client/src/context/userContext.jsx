@@ -1,37 +1,31 @@
 import { createContext, useEffect, useState } from "react";
-import axios from 'axios'
+import axios from "axios";
 
 export const UserContext = createContext({});
 
 export function UserContextProvider({ children }) {
   const [user, setUser] = useState(null);
 
-  useEffect(()=>{
+  useEffect(() => {
+    onRef();
+  }, []);
 
-    onRef()
+  const onRef = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:5000/api/auth/refetch",
+        { withCredentials: true }
+      );
 
-  }, [])
-
-
-  const onRef = async () =>{
-    
-
-    try{
-      const response = await axios.get(URL + '/api/auth/refetch', {withCredentials: true})
-      console.log(response.data);
-    }
-    catch(err){
-
+      setUser(response.data);
+    } catch (err) {
       console.log(err);
-
     }
+  };
 
-  }
-
-  return(
+  return (
     <UserContext.Provider value={{ user, setUser }}>
-    {children}
-  </UserContext.Provider>
-  )
-  
+      {children}
+    </UserContext.Provider>
+  );
 }
